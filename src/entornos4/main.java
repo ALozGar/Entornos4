@@ -30,6 +30,13 @@ public static void main(String[] args) {
         catch (Exception e) {
             System.out.println("Error al recargar");
         }
+       
+        try {
+            System.out.println(" Modificación 1");
+            cesta.ActualizarBono(-50);
+            } catch (Exception e) {
+            System.out.print("Fallo…….");
+        }
 
         double bonoactual = cesta.bonificacion();
         System.out.println("Su bono actual es  "+ bonoactual );        
